@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ContactCard from "./ContactCard";
+import "../style.css";
 
 const App = () => {
   const [people, setPeople] = useState([]);
@@ -17,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Employes contact list</h1>
+      <h1 className="title">Employes contact list</h1>
       {people.map((person) => (
         <ContactCard
           image={person.picture.thumbnail}

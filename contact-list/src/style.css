@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #264653;
+  padding: 10px;
+  margin: 20px;
+}
+
+.container {
+  display: grid;
+  height: 130px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 50%;
+  padding: 10px;
+  margin: 20px 30px;
+  background-color: #2a9d8f;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.info p {
+  font-size: 1rem;
+  margin: 8px;
+}
+
+.info button {
+  margin: 5px;
+  padding: 4px;
+  color: #fff;
+  background-color: #264653;
+  border: 1px solid #264653;
+  border-radius: 4px;
+}
