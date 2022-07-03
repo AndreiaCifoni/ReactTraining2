@@ -4,7 +4,8 @@ import "../style.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
+      <h1 className="title">Shopping List</h1>
       <ShoppingList />
     </div>
   );

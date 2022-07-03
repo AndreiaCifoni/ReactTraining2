@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/solid";
+import "../style.css";
 
 const List = ({ item, handleTotal }) => {
   const [count, setCount] = useState(0);
+  const [checked, setChecked] = useState(false);
 
   const onMinus = () => {
     if (count > 0) {
@@ -16,15 +18,20 @@ const List = ({ item, handleTotal }) => {
     handleTotal("+");
   };
 
+  const onCheck = () => {
+    setChecked(!checked);
+  };
+
   return (
     <div>
-      <ul>
+      <ul className="element">
         <li>
-          <input type="checkbox" />
-          {item}
-          <MinusCircleIcon onClick={onMinus} className="icon" />
+          <input type="checkbox" checked={checked} onClick={onCheck} />
+          <p className={checked ? "item-p checked" : "item-p"}>{item}</p>
+
+          <MinusCircleIcon onClick={onMinus} className="icon-list" />
           {count}
-          <PlusCircleIcon onClick={onPlus} className="icon" />
+          <PlusCircleIcon onClick={onPlus} className="icon-list" />
         </li>
       </ul>
     </div>

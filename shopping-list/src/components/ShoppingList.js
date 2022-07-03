@@ -23,8 +23,8 @@ const ShoppingList = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="container2">
+      <div className="container-input">
         <input
           type="text"
           value={inputItem}
@@ -34,12 +34,12 @@ const ShoppingList = () => {
           <PlusIcon className="icon" />
         </button>
       </div>
-      <div>
+      <div className="container-item">
         {items.map((item) => (
           <List item={item.item} handleTotal={handleTotal} />
         ))}
       </div>
-      <p>{total}</p>
+      <p className="result">Total: {total}</p>
     </div>
   );
 };
