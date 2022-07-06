@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../style.css";
 
 const App = () => {
   const [quote, setQuote] = useState("");
@@ -23,8 +24,10 @@ const App = () => {
   return (
     <div className="container">
       <div className="card">
-        <p>{quote}</p>
-        <button onClick={onQuote}>Get New Quote</button>
+        <p className="text">{quote}</p>
+        <button onClick={onQuote} className="btn">
+          Get New Quote
+        </button>
       </div>
     </div>
   );

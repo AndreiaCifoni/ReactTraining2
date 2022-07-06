@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(222, 222, 222),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+}
+
+.card {
+  width: 40%;
+  height: 150px;
+  padding: 20px;
+  margin: 100px auto;
+  background-color: rgb(243, 234, 209);
+}
+
+.text {
+  font-size: 1.6em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px;
+  margin: 40px 90px;
+}
